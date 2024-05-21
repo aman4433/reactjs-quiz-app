@@ -1,0 +1,5 @@
+
+> quiz-app@0.0.0 start
+> node server.js
+
+Frontend is running on http://0.0.0.0:8080

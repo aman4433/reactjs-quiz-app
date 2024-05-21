@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node populateDB.js && node index.js",
+    "dev": "nodemon populateDB.js && nodemon index.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "prettier": "prettier --write .",
     "test": "echo \"No tests specified yet\" && exit 0"
