@@ -22,7 +22,7 @@ const Quiz = () => {
     const fetchQuestions = async () => {
       if (startQuiz) {
         try {
-          const apiUrl = 'http://52.73.181.59:3000/api/questions';
+          const apiUrl = import.meta.env.VITE_REACT_APP_API_URL;
           const response = await fetch(apiUrl);
           if (!response.ok) throw new Error("Failed to fetch");
           let questions = await response.json();
